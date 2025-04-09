@@ -12,20 +12,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Entrega"
         tools:targetApi="31">
-
+        <activity
+            android:name=".banquete8"
+            android:exported="false" />
+        <activity
+            android:name=".banquete7"
+            android:exported="false" />
+        <activity
+            android:name=".banquete6"
+            android:exported="false" />
+        <activity
+            android:name=".banquete5"
+            android:exported="false" />
+        <activity
+            android:name=".banquete4"
+            android:exported="false" />
+        <activity
+            android:name=".banquete3"
+            android:exported="false" />
+        <activity
+            android:name=".banquete2"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".banquete1"
+            android:exported="false" />
         <activity
             android:name=".InicioSesion"
             android:exported="false" />
-
         <activity
-            android:name=".Registro"
+            android:name=".banquetes"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
