@@ -37,9 +37,9 @@ public class InicioSesion extends AppCompatActivity {
                 boolean loginCorrecto = dbHelper.validarLogin(email, pass);
                 if (loginCorrecto) {
                     Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                    // Aquí puedes abrir un HomeActivity
-                    // startActivity(new Intent(this, HomeActivity.class));
-                    // finish();
+                    Intent intent = new Intent(InicioSesion.this, PaginaInicio.class);
+                    startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(this, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show();
                 }

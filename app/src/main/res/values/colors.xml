@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Ya existentes -->
     <color name="primary_green">#4CAF50</color>
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
     <color name="white">#FFFFFF</color>
     <color name="background">#FAFAFA</color>
+
+    <!-- Nuevos -->
+    <color name="crema_fondo">#F9F5E5</color>
+    <color name="verde_botones">#607D3B</color>
+    <color name="icono_rojo">#F44336</color>
+    <color name="icono_amarillo">#FFEB3B</color>
+    <color name="icono_gris">#BDBDBD</color>
+    <color name="gris_claro">#E0E0E0</color>
+    <color name="borde_tarjeta">#D6D6D6</color>
 </resources>

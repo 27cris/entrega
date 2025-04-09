@@ -1,14 +1,40 @@
 <resources>
+    <!-- Ya existentes -->
     <string name="app_name">Entrega</string>
-        <string name="logo_content_desc">Logo de la aplicación</string>
-        <string name="register_with">Regístrate con</string>
-        <string name="google_login">Continuar con Google</string>
-        <string name="or_text">o</string>
-        <string name="email_hint">Correo electrónico</string>
-        <string name="password_hint">Contraseña</string>
-        <string name="confirm_password_hint">Confirmar contraseña</string>
-        <string name="register_button">Registrarse</string>
-        <string name="already_have_account">¿Ya tienes cuenta?</string>
-        <string name="login_text">Inicia sesión</string>
-        <string name="terms_text">Al registrarte, aceptas nuestros Términos de uso y Política de privacidad.</string>
+    <string name="logo_content_desc">Logo de la aplicación</string>
+    <string name="register_with">Regístrate con</string>
+    <string name="google_login">Continuar con Google</string>
+    <string name="or_text">o</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="confirm_password_hint">Confirmar contraseña</string>
+    <string name="register_button">Registrarse</string>
+    <string name="already_have_account">¿Ya tienes cuenta?</string>
+    <string name="login_text">Inicia sesión</string>
+    <string name="terms_text">Al registrarte, aceptas nuestros Términos de uso y Política de privacidad.</string>
+
+    <!-- Nuevos -->
+    <string name="search_hint">¿Qué te gustaría el día de hoy?..</string>
+    <string name="menu_icon_desc">Menú</string>
+    <string name="settings_icon_desc">Configuración</string>
+    <string name="user_avatar_desc">Avatar de usuario</string>
+    <string name="recipe_name_placeholder">Nombre de la recetas</string>
+    <string name="prep_time">45 min</string>
+    <string name="likes">350mil</string>
+    <string name="difficulty">Dificultad: media</string>
+    <string name="home">Inicio</string>
+    <string name="search">Buscar</string>
+    <string name="list">Lista</string>
+    <string name="community">Comunidad</string>
+    <string name="profile">Perfil</string>
+    <string name="recipe_bandeja_paisa">Bandeja Paisa</string>
+    <string name="recipe_ajiaco">Ajiaco Santafereño</string>
+    <string name="recipe_sancocho">Sancocho</string>
+    <string name="cook_time_45">⏱ 45 min</string>
+    <string name="likes_350k">❤️ 350mil</string>
+    <string name="difficulty_medium">⚠ Dificultad: media</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_categories">Categorías</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_profile">Perfil</string>
 </resources>
