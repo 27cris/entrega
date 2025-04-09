@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".banquete4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btnatras"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/atras"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Botón atrás" />
+
+        <TextView
+            android:id="@+id/nombre_banquete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="San valentin"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingHorizontal="8dp" />
+
+
+    </LinearLayout>
+
+    <!-- Imagen del banquete -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/san" />
+
+    <!-- Reacciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/corazon_like" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:paddingHorizontal="8dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/comentarios"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/compartir"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Sección de platillos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="platillos:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <!-- CardView simulando el cuadro verde -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeColor="#008000"
+        app:strokeWidth="2dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Tabla de categorías -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView android:text="Entradas" android:textStyle="bold" />
+                    <TextView android:text="•Canastitas de hojaldre •Ensalada capres" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Platos\nPrincipales" android:textStyle="bold" />
+                    <TextView android:text="•Pechuga de pollo •Lasagna de carne" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Acompañamientos" android:textStyle="bold" />
+                    <TextView android:text="•Arroz con almendras •Verduras asadas" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Postres" android:textStyle="bold" />
+                    <TextView android:text="•Tarta de manzana •Copas de mousse" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Bebidas" android:textStyle="bold" />
+                    <TextView android:text="•Cóctel de durazno •Limonada de coco" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".banquete1">
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btnatras"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/atras"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Botón atrás" />
+
+        <TextView
+            android:id="@+id/nombre_banquete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Navidad"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingHorizontal="8dp" />
+    </LinearLayout>
+
+    <!-- Imagen -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/navidad" />
+
+    <!-- Reacciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/corazon_like" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:paddingHorizontal="8dp" />
+
+        <ImageButton
+            android:id="@+id/btncomentario"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/comentarios"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Botón comentarios" />
+        <ImageButton
+            android:id="@+id/btnCompartir"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/compartir"
+            android:background="@null"
+            android:contentDescription="Compartir"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <!-- Sección de platillos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="platillos:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeColor="#008000"
+        app:strokeWidth="2dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView android:text="Entradas" android:textStyle="bold" />
+                    <TextView android:text="• Tabla de quesos • Crema de calabaza" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Platos\nPrincipales" android:textStyle="bold" />
+                    <TextView android:text="• Pavo relleno • Lomo de cerdo" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Acompañamientos" android:textStyle="bold" />
+                    <TextView android:text="• Puré de papa • Ensalada navideña" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Postres" android:textStyle="bold" />
+                    <TextView android:text="• Pastel de frutos secos • Galletas de jengibre" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="Bebidas" android:textStyle="bold" />
+                    <TextView android:text="• Ponche navideño • Vino tinto" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Ingredientes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeColor="#008000"
+        app:strokeWidth="2dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entradas:" android:textStyle="bold" android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Quesos variados\n• Calabaza\n• Crema de leche\n• Cebolla\n• Ajo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Platos principales:"
+                android:textStyle="bold" android:textSize="16sp" android:paddingTop="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Pavo\n• Carne molida\n• Pan rallado\n• Lomo de cerdo\n• Ajo\n• Hierbas secas" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acompañamientos:" android:textStyle="bold" android:textSize="16sp" android:paddingTop="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Papas\n• Mantequilla\n• Leche\n• Manzana\n• Zanahoria\n• Nuez\n• Mayonesa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postres:" android:textStyle="bold" android:textSize="16sp" android:paddingTop="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Frutos secos\n• Harina\n• Azúcar\n• Mantequilla\n• Jengibre\n• Huevo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bebidas:" android:textStyle="bold" android:textSize="16sp" android:paddingTop="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Frutas variadas\n• Canela\n• Vino tinto" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Preparación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparación:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Preparar la tabla de quesos con variedad al gusto y acompañar con galletas saladas." />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Cocinar la calabaza con cebolla y ajo, licuar con crema para hacer la crema de calabaza." android:paddingTop="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Rellenar el pavo con carne molida, pan rallado y especias. Hornear a temperatura media hasta dorar." android:paddingTop="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Sellar el lomo de cerdo, sazonar con hierbas y hornear con vino blanco o jugo de manzana." android:paddingTop="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Cocinar las papas y hacer un puré con mantequilla y leche. Preparar ensalada con frutas y mayonesa." android:paddingTop="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Hornear pastel de frutos secos y galletas de jengibre según receta tradicional." android:paddingTop="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Calentar ponche con frutas, canela y azúcar. Servir acompañado de vino tinto si se desea." android:paddingTop="4dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
