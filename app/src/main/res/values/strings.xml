@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Entrega</string>
+        <string name="logo_content_desc">Logo de la aplicación</string>
+        <string name="register_with">Regístrate con</string>
+        <string name="google_login">Continuar con Google</string>
+        <string name="or_text">o</string>
+        <string name="email_hint">Correo electrónico</string>
+        <string name="password_hint">Contraseña</string>
+        <string name="confirm_password_hint">Confirmar contraseña</string>
+        <string name="register_button">Registrarse</string>
+        <string name="already_have_account">¿Ya tienes cuenta?</string>
+        <string name="login_text">Inicia sesión</string>
+        <string name="terms_text">Al registrarte, aceptas nuestros Términos de uso y Política de privacidad.</string>
+</resources>
